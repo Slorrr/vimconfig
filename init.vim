@@ -5,16 +5,16 @@ set number
 set noswapfile
 set scrolloff=3
 syntax enable
-
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
 set fileformat=unix
-filetype indent on 
+filetype indent on
 set smartindent
 set expandtab
+set guifont=<>
 
 source $HOME/.config/nvim/plug-config/coc.vim
 
@@ -29,14 +29,13 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'voldikss/vim-floaterm'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
 colorscheme gruvbox
-
-Plug 'kristijanhusak/defx-icons'
-
 let g:airline_theme='gruvbox'
+let g:airline_powerline_fonts = 1
 
 "Tabs
 nmap <C-b> :NERDTreeToggle<CR>
@@ -47,4 +46,3 @@ nmap <C-l> :FloatermToggle!<CR>
 "nmap <leader>1 :bp<CR>
 "nmap <leader>2 :bn<CR>
 "nmap <C-w> :bd<CR>
-
